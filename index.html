@@ -1,151 +1,608 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Untitled Document</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link type="text/css" href="resources/css/reset.css" rel="Stylesheet" />
-    <link type="text/css" href="resources/css/default.css" rel="Stylesheet" />
-    <link rel="shortcut icon" href="resources/images/favicon_play.ico" />
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet'>
-
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/home/styles.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+@font-face {
+font-family: 'Roboto Slab', serif;
+}
+    </style>
+    <link href="" type="text/css" rel="stylesheet"/>
+    <link href="" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/home/data.js"></script>
     <script type="text/javascript">
-        if (location.href.toString().indexOf('file://localhost/') == 0) {
-            location.href = location.href.toString().replace('file://localhost/', 'file:///');
-        }
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
+  </head>
+  <body>
+    <div id="base" class="">
 
-    <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/handoff.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
-</head>
-<body scroll="no" class="hashover" style="overflow: hidden;">
-    <div id="topPanel">
-        <div id="interfaceControlFrame">
-            <div id="interfaceControlFrameLeft">
-                <div id="interfaceControlFrameMinimizeContainer">
-                    <a title="Collapse" id="interfaceControlFrameMinimizeButton">
-                        <div id="minimizeArrow" class="minimizeButtonHover minimizeIcon"></div>
-                        <div id="minimizeX" class="minimizeButton minimizeIcon"></div>
-                    </a>
-                </div>
-                <div id="interfaceControlFrameCloseContainer">
-                    <a title="Close" id="interfaceControlFrameCloseButton">CLOSE</a>
-                </div>
+      <!-- Frame 30 (Group) -->
+      <div id="u0" class="ax_default" data-label="Frame 30" data-left="0" data-top="0" data-width="1001" data-height="2852">
 
-                <div id="sitemapControlFrameContainer" title="Project Pages">
-                    <div id="projectControlFrameHeaderContainer">
-                        <ul id="projectControlFrameHeader"></ul>
-                    </div>
-                    
-                    <div id="interfacePageNameContainer">
-                        <div id="interfacePageNameButton" class='pageNameHeader'>
-                            &nbsp;
-                        </div>
-                        <div id="interfacePageCount" class='pageCountHeader'>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="interfaceAdaptiveViewsContainer" title="Adaptive Views">
-                    <div id="interfaceAdaptiveViewsIconButton">&nbsp;</div>
-                    <div id="interfaceAdaptiveViewsButton" class='adaptiveViewHeader'>
-                        &nbsp;
-                    </div>
-                    <div id="adaptiveViewsDropdown" class="caret"></div>
-                </div>
-            </div>
-            
-            <div id="interfaceControlFrameContainer">
-                <div id="handoffControlFrameHeaderContainer">
-                    <ul id="handoffControlFrameHeader"></ul>
-                </div>
-                <div id="interfaceControlFrameLogoContainer">
-                    <div id="previewNotice">
-                        Local Preview
-                    </div>
-                </div>
-            </div>
-
-            <div id="interfaceControlFrameRight">
-                <div id="publishContainer">
-                    <a id="publishButton">Share Prototype</a>
-                </div>
-                
-                <div id="inspectControlFrameHeaderContainer">
-                    <ul id="inspectControlFrameHeader">
-                        <li id="overflowBtn">
-                            <a id="overflowMenuButton" title="View Options"></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="separatorContainer">
-                    <div class="separator"></div>
-                </div>
-
-                <div id="overflowMadeWith"><a href="https://www.axure.com" id="axureLogo" target="_blank"></a></div>
-
-            </div>
-
+        <!-- BG (Rectangle) -->
+        <div id="u1" class="ax_default shape" data-label="BG">
+          <div id="u1_div" class=""></div>
+          <div id="u1_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
         </div>
+
+        <!-- Rectangle 15 (Rectangle) -->
+        <div id="u2" class="ax_default shape" data-label="Rectangle 15">
+          <div id="u2_div" class=""></div>
+          <div id="u2_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Rectangle (Rectangle) -->
+        <div id="u3" class="ax_default shape" data-label="Rectangle">
+          <div id="u3_div" class=""></div>
+          <div id="u3_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Rectangle (Rectangle) -->
+        <div id="u4" class="ax_default shape" data-label="Rectangle">
+          <div id="u4_div" class=""></div>
+          <div id="u4_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- face_stockholm_-_www 1 (Rectangle) -->
+        <div id="u5" class="ax_default shape" data-label="face_stockholm_-_www 1">
+          <div id="u5_div" class=""></div>
+          <div id="u5_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Logo 1 (Rectangle) -->
+        <div id="u6" class="ax_default shape" data-label="Logo 1">
+          <div id="u6_div" class=""></div>
+          <div id="u6_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Rectangle (Rectangle) -->
+        <div id="u7" class="ax_default shape" data-label="Rectangle">
+          <div id="u7_div" class=""></div>
+          <div id="u7_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u8" class="ax_default shape">
+          <div id="u8_div" class=""></div>
+          <div id="u8_text" class="text ">
+            <p><span>Welcome to my Portfolio.</span></p><p><span>This is me.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u9" class="ax_default shape">
+          <div id="u9_div" class=""></div>
+          <div id="u9_text" class="text ">
+            <p><span>Cases</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u10" class="ax_default shape">
+          <div id="u10_div" class=""></div>
+          <div id="u10_text" class="text ">
+            <p><span>Contact</span></p>
+          </div>
+        </div>
+
+        <!-- Rectangle 5 (Rectangle) -->
+        <div id="u11" class="ax_default shape" data-label="Rectangle 5">
+          <div id="u11_div" class=""></div>
+          <div id="u11_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- u89 1 (Rectangle) -->
+        <div id="u12" class="ax_default shape" data-label="u89 1">
+          <div id="u12_div" class=""></div>
+          <div id="u12_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- u90 1 (Rectangle) -->
+        <div id="u13" class="ax_default shape" data-label="u90 1">
+          <div id="u13_div" class=""></div>
+          <div id="u13_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u14" class="ax_default shape">
+          <div id="u14_div" class=""></div>
+          <div id="u14_text" class="text ">
+            <p><span>Skills</span></p>
+          </div>
+        </div>
+
+        <!-- u88 1 (Rectangle) -->
+        <div id="u15" class="ax_default shape" data-label="u88 1">
+          <div id="u15_div" class=""></div>
+          <div id="u15_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u16" class="ax_default shape">
+          <div id="u16_div" class=""></div>
+          <div id="u16_text" class="text ">
+            <p><span>In my spare time I like to watch movies/Formula 1, Fix computers and take pictures of cars. </span></p><p><span><br></span></p><p><span>My passion is UX design. I care about the details and don’t crack under pressure.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u17" class="ax_default shape">
+          <div id="u17_div" class=""></div>
+          <div id="u17_text" class="text ">
+            <p><span>I’m Rens Pronk</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u18" class="ax_default shape">
+          <div id="u18_div" class=""></div>
+          <div id="u18_text" class="text ">
+            <p><span>UX Designer</span></p>
+          </div>
+        </div>
+
+        <!-- 160603 1 (Rectangle) -->
+        <div id="u19" class="ax_default shape" data-label="160603 1">
+          <div id="u19_div" class=""></div>
+          <div id="u19_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u20" class="ax_default shape">
+          <div id="u20_div" class=""></div>
+          <div id="u20_text" class="text ">
+            <p><span>22 Years old</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u21" class="ax_default shape">
+          <div id="u21_div" class=""></div>
+          <div id="u21_text" class="text ">
+            <p><span>The Hague, The Netherlands</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u22" class="ax_default shape">
+          <div id="u22_div" class=""></div>
+          <div id="u22_text" class="text ">
+            <p><span>For UX assignments I like to work in Figma. I use Figma for every design project including this very portfolio. I’m an experienced Figma user and love working with it. </span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u23" class="ax_default shape">
+          <div id="u23_div" class=""></div>
+          <div id="u23_text" class="text ">
+            <p><span>If you would want to get in contact with me you can do so through my social media or send an email to </span><span style="text-decoration:underline ;">renspronk10@hotmail.com</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u24" class="ax_default shape">
+          <div id="u24_div" class=""></div>
+          <div id="u24_text" class="text ">
+            <p><span>If i’m not working in Figma i’m working in Axure. It helps getting prototypes online and creating smooth interactions between pages.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u25" class="ax_default shape">
+          <div id="u25_div" class=""></div>
+          <div id="u25_text" class="text ">
+            <p><span>For programming projects i’m mostly working with HTML and CSS. I can create websites from scratch and tinker around to get it just how I want it to be.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u26" class="ax_default shape">
+          <div id="u26_div" class=""></div>
+          <div id="u26_text" class="text ">
+            <p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:700;">APP</span><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;"> - For a school project we had the assignment to make an app to “get color into your life” For the brand called “FACE Stockholm”. We created a live wallpaper app with customizable backgrounds. </span></p><p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;">The app was made in Figma using only google’s material design. </span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u27" class="ax_default shape">
+          <div id="u27_div" class=""></div>
+          <div id="u27_text" class="text ">
+            <p><span>FACE color</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u28" class="ax_default shape">
+          <div id="u28_div" class=""></div>
+          <div id="u28_text" class="text ">
+            <p><span>Direct.nl</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u29" class="ax_default shape">
+          <div id="u29_div" class=""></div>
+          <div id="u29_text" class="text ">
+            <p><span>Imperium Theater</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u30" class="ax_default shape">
+          <div id="u30_div" class=""></div>
+          <div id="u30_text" class="text ">
+            <p><span>Tolk to me</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u31" class="ax_default shape">
+          <div id="u31_div" class=""></div>
+          <div id="u31_text" class="text ">
+            <p><span>Premiere</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u32" class="ax_default shape">
+          <div id="u32_div" class=""></div>
+          <div id="u32_text" class="text ">
+            <p><span>Photoshop</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u33" class="ax_default shape">
+          <div id="u33_div" class=""></div>
+          <div id="u33_text" class="text ">
+            <p><span>Lightroom</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u34" class="ax_default shape">
+          <div id="u34_div" class=""></div>
+          <div id="u34_text" class="text ">
+            <p><span>Figma</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u35" class="ax_default shape">
+          <div id="u35_div" class=""></div>
+          <div id="u35_text" class="text ">
+            <p><span>Axure</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u36" class="ax_default shape">
+          <div id="u36_div" class=""></div>
+          <div id="u36_text" class="text ">
+            <p><span>HTML/CSS</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u37" class="ax_default shape">
+          <div id="u37_div" class=""></div>
+          <div id="u37_text" class="text ">
+            <p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:700;">WEBSITE</span><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;"> - For a school Project I had to do a redesign of an existing website called “Direct.nl”. It was a local electronics shop based in Rotterdam. their previous website was a mess and I had to come up with a new design using the right design patterns. </span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u38" class="ax_default shape">
+          <div id="u38_div" class=""></div>
+          <div id="u38_text" class="text ">
+            <p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:700;">APP</span><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;"> - For a school project We had to make an app for an actual client. We had to create a concept that would help deaf people in the city.</span></p><p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;">We came up with the “Tolk to me” App which allowed deaf people to get in contact with more translators since our research showed there were not nearly enough translators available.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u39" class="ax_default shape">
+          <div id="u39_div" class=""></div>
+          <div id="u39_text" class="text ">
+            <p><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:700;">WEBSITE</span><span style="font-family:'Roboto slab ', 'Roboto slab', sans-serif;font-weight:400;"> - For a school project I had to make a redesign of the webpage from a local theater. The goal was to design the website for a particular target audience. My target audience was the people that would like to rent the theater. The other goal behind this assignment was to get to learn Axure for the first time.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u40" class="ax_default shape">
+          <div id="u40_div" class=""></div>
+          <div id="u40_text" class="text ">
+            <p><span>For creating videos I use Adobe Premiere Pro. I use it for personal projects and occasionally school projects. I’m relatively experienced with Premiere and know to create videos.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u41" class="ax_default shape">
+          <div id="u41_div" class=""></div>
+          <div id="u41_text" class="text ">
+            <p><span>For manipulation photo’s or when lightroom is not enough I like to use Adobe Photoshop CS6. I know my way around photoshop and can Manipulate photo’s to change them into something new.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u42" class="ax_default shape">
+          <div id="u42_div" class=""></div>
+          <div id="u42_text" class="text ">
+            <p><span>When I’m editing pictures I love to use Adobe lightroom Classic. I’m very experienced with lightroom and know everything there is to know about editing photos in Lightroom.</span></p>
+          </div>
+        </div>
+
+        <!-- 151211 1 (Rectangle) -->
+        <div id="u43" class="ax_default shape" data-label="151211 1">
+          <div id="u43_div" class=""></div>
+          <div id="u43_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Line 15 (Shape) -->
+        <div id="u44" class="ax_default shape" data-label="Line 15">
+          <img id="u44_img" class="img " src="images/home/line_15_u44.svg"/>
+          <div id="u44_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Line 16 (Shape) -->
+        <div id="u45" class="ax_default shape" data-label="Line 16">
+          <img id="u45_img" class="img " src="images/home/line_16_u45.svg"/>
+          <div id="u45_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Line 17 (Shape) -->
+        <div id="u46" class="ax_default shape" data-label="Line 17">
+          <img id="u46_img" class="img " src="images/home/line_16_u45.svg"/>
+          <div id="u46_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Line 18 (Shape) -->
+        <div id="u47" class="ax_default shape" data-label="Line 18">
+          <img id="u47_img" class="img " src="images/home/line_16_u45.svg"/>
+          <div id="u47_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Line 19 (Shape) -->
+        <div id="u48" class="ax_default shape" data-label="Line 19">
+          <img id="u48_img" class="img " src="images/home/line_16_u45.svg"/>
+          <div id="u48_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- u77 1 (Rectangle) -->
+        <div id="u49" class="ax_default shape" data-label="u77 1">
+          <div id="u49_div" class=""></div>
+          <div id="u49_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- axure icon 125 (Group) -->
+        <div id="u50" class="ax_default" data-label="axure icon 125" data-left="41" data-top="1010" data-width="80" data-height="80">
+
+          <!-- Asset 5 (Group) -->
+          <div id="u51" class="ax_default" data-label="Asset 5" data-left="41" data-top="1010" data-width="80" data-height="80">
+
+            <!-- Group (Group) -->
+            <div id="u52" class="ax_default ax_default_hidden" data-label="Group" style="display:none; visibility: hidden" data-left="41" data-top="1010" data-width="80" data-height="80">
+
+              <!-- Rectangle (Shape) -->
+              <div id="u53" class="ax_default shape" data-label="Rectangle">
+                <img id="u53_img" class="img " src="images/home/rectangle_u53.svg"/>
+                <div id="u53_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Rectangle (Shape) -->
+              <div id="u54" class="ax_default shape" data-label="Rectangle">
+                <img id="u54_img" class="img " src="images/home/rectangle_u54.svg"/>
+                <div id="u54_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rectangle (Group) -->
+            <div id="u55" class="ax_default" data-label="Rectangle" data-left="41" data-top="1010" data-width="80" data-height="80">
+
+              <!-- Vector (Shape) -->
+              <div id="u56" class="ax_default shape" data-label="Vector">
+                <img id="u56_img" class="img " src="images/home/vector_u56.svg"/>
+                <div id="u56_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Vector (Shape) -->
+              <div id="u57" class="ax_default shape" data-label="Vector">
+                <img id="u57_img" class="img " src="images/home/vector_u57.svg"/>
+                <div id="u57_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Vector (Shape) -->
+              <div id="u58" class="ax_default shape ax_default_hidden" data-label="Vector" style="display:none; visibility: hidden">
+                <img id="u58_img" class="img " src="images/home/vector_u58.svg"/>
+                <div id="u58_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asset 1 (Group) -->
+          <div id="u59" class="ax_default" data-label="Asset 1" data-left="58" data-top="1022" data-width="47" data-height="55">
+
+            <!-- Path (Shape) -->
+            <div id="u60" class="ax_default shape" data-label="Path">
+              <img id="u60_img" class="img " src="images/home/path_u60.svg"/>
+              <div id="u60_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Path (Shape) -->
+            <div id="u61" class="ax_default shape" data-label="Path">
+              <img id="u61_img" class="img " src="images/home/path_u61.svg"/>
+              <div id="u61_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Path (Shape) -->
+            <div id="u62" class="ax_default shape" data-label="Path">
+              <img id="u62_img" class="img " src="images/home/path_u62.svg"/>
+              <div id="u62_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- u91 1 (Rectangle) -->
+        <div id="u63" class="ax_default shape" data-label="u91 1">
+          <div id="u63_div" class=""></div>
+          <div id="u63_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- u93 (Rectangle) -->
+        <div id="u64" class="ax_default shape" data-label="u93">
+          <div id="u64_div" class=""></div>
+          <div id="u64_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- u92 (Rectangle) -->
+        <div id="u65" class="ax_default shape" data-label="u92">
+          <div id="u65_div" class=""></div>
+          <div id="u65_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Group 47 (Group) -->
+        <div id="u66" class="ax_default" data-label="Group 47" data-left="41" data-top="1140" data-width="80" data-height="80">
+
+          <!-- u79 (Rectangle) -->
+          <div id="u67" class="ax_default shape" data-label="u79">
+            <div id="u67_div" class=""></div>
+            <div id="u67_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- u78 (Rectangle) -->
+          <div id="u68" class="ax_default shape" data-label="u78">
+            <div id="u68_div" class=""></div>
+            <div id="u68_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- u169 2 (Rectangle) -->
+        <div id="u69" class="ax_default shape" data-label="u169 2">
+          <div id="u69_div" class=""></div>
+          <div id="u69_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- logoPR-E (1) (Rectangle) -->
+        <div id="u70" class="ax_default shape" data-label="logoPR-E (1)">
+          <div id="u70_div" class=""></div>
+          <div id="u70_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u71" class="ax_default shape">
+          <div id="u71_div" class=""></div>
+          <div id="u71_text" class="text ">
+            <p><span>Rens Pronk</span></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="popupContainer">
-        <div id='interfaceAdaptiveViewsListContainer'>
-        </div>
-
-        <div id='interfaceScaleListContainer'>
-        </div>
-
-        <div id='accountLoginContainer'>
-        </div>
-
-        <div id='overflowMenuContainer'>
-        </div>
-    </div>
-    <div id="outerContainer">
-        <div id="clippingBounds">
-            <div id="clippingBoundsScrollContainer"></div>
-        </div>
-
-        <div id="mHideSidebar"></div>
-        <div id="lsplitbar" class="splitbar"></div>
-
-        <div id="mainPanel">
-            <div id="mainPanelContainer" style="position: relative; width:100%; height: 100%;">
-                <div id="clipFrameScroll" style="position: relative; width:100%; height: 100%; background-color: #ffffff;">
-                    <iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="about:blank" frameborder="0" style="display: block;position:absolute;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div id="rsplitbar" class="splitbar"></div>
-
-    </div>
-
-    <div id="maximizePanelContainer" class="maximizePanelContainer">
-        <div id="maximizePanelOver">
-            <div id="maximizePanel" title="Expand" class="maximizePanelOver">
-                <div id="maximizeButton" class="maximizeButton maximizeIcon"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="mobileControlFrameContainer"></div>
-
-<!-- 9.0.0.3701 -->
-<script src="resources/scripts/jquery-3.2.1.min.js"></script>
-<script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
-<script src="resources/scripts/axutils.js"></script>
-<script src="resources/scripts/messagecenter.js"></script>
-<script src="resources/scripts/player/axplayer.js"></script>
-<script src="resources/scripts/player/init.js"></script>
-
-
-</body>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
 </html>
